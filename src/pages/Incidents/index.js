@@ -9,7 +9,7 @@ export default function Incidents(){
   const navigation = useNavigation();
 
   function navigateToDetail(){
-    navigation.navigate('Detail')
+    navigation.navigate('Detail');
   }
 
   return(
@@ -42,9 +42,7 @@ export default function Incidents(){
           <Text style={styles.incidentProperty}>VALOR:</Text>
           <Text style={styles.incidentValue}>R$ 120/,00</Text>
           
-          <TouchableOpacity style={styles.detailsButton} onPress={() => {
-
-          }}>
+          <TouchableOpacity style={styles.detailsButton} onPress={navigateToDetail}>
             
             <Text style={styles.detailsButtonText}>Ver mais detalhes</Text>
             <Feather name="arrow-right" size={16} color="#E02041" />
